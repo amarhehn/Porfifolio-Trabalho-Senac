@@ -1,0 +1,18 @@
+body {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	background: #000;
+
+	font-size: calc(var(--_size) * 0.01);
+	--_size: min(min(600px, 50vh), 50vw);
+	--base-clr: #b7b5b4;
+	--degofrot: 0.8;
+}

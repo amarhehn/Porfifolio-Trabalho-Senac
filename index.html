@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Ícones Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="assents/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">MAR</a>
+        <div class="nav-center">
+        <ul class="nav-links" id="navLinks">
+            <li><a  class="nav-links" id="navLinks"href="index.html" class="active">Aqui</a></li>
+            <li><a class="nav-links" id="navLinks"href="assents/pages/voce.html">Você</a></li>
+            <li><a class="nav-links" id="navLinks"href="assents/pages/faco.html">Faço</a></li>
+            <li><a class="nav-links" id="navLinks" href="assents/pages/havia.html">Havia</a></li>
+            <li><a class="nav-links" id="navLinks" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contato</a></li>
+            <li class="mobile-auth-buttons"></li>
+        </ul>
+        </div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+    </nav>
+
+    <!-- Seção Home -->
+    <section id="home" class="section">
+    <div>
+        <h1>OLÁ</h1>
+        <p class="section-info">
+        Bem-vindo, <br>teste a minha atualidade.
+        </p>
+    </div>
+    </section>
+
+    <!-- Seção mood -->
+    <section id="home" class="section">
+    <div>
+        <h2></h2>
+        <div class="trilho" id="trilho">
+        <div class="indicador" id="indicador"></div>
+        <div class="image-container">
+        <img src="img/mao-feminina-home-escuro.png" alt="mão modo escuro">
+        </div>
+        </div>
+        </div>
+    
+    </section>
+
+<footer class="footer">
+<div class="footer-container">
+    <div class="footer-content">
+    <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="voce.html">Você</a>
+        <a href="faco.html">Faço</a>
+        <a href="havia.html">Havia</a>
+    </div>
+    <div class="footer-section">
+        <h3>Connect</h3>
+        <a href="mailto:amarhehn@gmail.com">E-mail: amarhehn@gmail.com</a>
+        <a href="tel:+5551991030076">(51) 99103-0076</a>
+    </div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Senac. Todos os direitos reservados.</p>
+    </div>
+</div>
+</footer>
+
+
+    <!-- Modal de Contato -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header bg-transparent text-gray">
+            <h5 class="modal-title" id="contactModalLabel">
+            <i class="bi bi-envelope-fill me-2"></i>Fale por Aqui
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+            <form id="contact-modal-form">
+            <div class="mb-3">
+                <label for="modalName" class="form-label">Nome</label>
+                <input type="text" id="modalName" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="modalEmail" class="form-label">Email</label>
+                <input type="email" id="modalEmail" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="modalMessage" class="form-label">Mensagem</label>
+                <textarea id="modalMessage" name="message" rows="4" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-transaparent w-100">Enviar</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal de Sucesso -->
+    <div class="modal fade" id="contactSuccessModal" tabindex="-1" aria-labelledby="contactSuccessLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-transparent text-white">
+                <h5 class="modal-title" id="contactSuccessLabel">
+            <i class="bi bi-check-circle-fill me-2"></i>Mensagem enviada!
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+            <p>Sua mensagem foi enviada com sucesso. Entraremos em contato em breve 💌</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+<!-- Scripts -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="assents/home.js"></script>
+
+</body>
+</html>

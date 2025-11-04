@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Ícones Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Seu CSS e Js-->
+   <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/voce.style.css">
+    
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">MAR</a>
+        <div class="nav-center">
+        <ul class="nav-links" id="navLinks">
+            <li><a  class="nav-links" id="navLinks"href="../../index.html" class="active">Aqui</a></li>
+            <li><a class="nav-links" id="navLinks"href="voce.html">Você</a></li>
+            <li><a class="nav-links" id="navLinks" href="faco.html">Faço</a></li>
+            <li><a class="nav-links" id="navLinks" href="havia.html">Havia</a></li>
+            <li><a class="nav-links" id="navLinks" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contato</a></li>
+            <li class="mobile-auth-buttons"></li>
+        </ul>
+        </div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+    </nav>
+
+
+
+    <!-- Modal de Contato -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header bg-transparent text-gray">
+            <h5 class="modal-title" id="contactModalLabel">
+            <i class="bi bi-envelope-fill me-2"></i>Fale por Aqui
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+            <form id="contact-modal-form">
+            <div class="mb-3">
+                <label for="modalName" class="form-label">Nome</label>
+                <input type="text" id="modalName" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="modalEmail" class="form-label">Email</label>
+                <input type="email" id="modalEmail" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="modalMessage" class="form-label">Mensagem</label>
+                <textarea id="modalMessage" name="message" rows="4" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-transaparent w-100">Enviar</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal de Sucesso -->
+    <div class="modal fade" id="contactSuccessModal" tabindex="-1" aria-labelledby="contactSuccessLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-transparent text-white">
+                <h5 class="modal-title" id="contactSuccessLabel">
+            <i class="bi bi-check-circle-fill me-2"></i>Mensagem enviada!
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+            <p>Sua mensagem foi enviada com sucesso. Entraremos em contato em breve 💌</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <button id="botao">VOCÊ</button>
+    <div id="texto">
+        <div class="quadro">
+            <h1>EU</h1>
+        
+            <section class="bloco">
+            <img src="/img/perfil-rosto.jpg" alt="foto de corpo">
+            <p>
+                <br><br>Oi, eu sou a Mar<br>
+                Sou feita de matéria orgânica,
+                carbono, caos e ideias <br> milimetricamente organizada em 0s e 1s. <br>
+                E eu gosto muito de entender os 0s e os 1s! <br>
+                — gosto de usar o termo 'Tecnologia Ancestral <br> (define melhor as minhas ondas) <br> <br>
+                Carrego uma mistura curiosa de linguagens: <br>
+                Arte, Cultura, Tecnologia, Política, Ciência <br>
+                e um pouco de poesia que insiste em compilar mesmo nos dias lentos e sem querer.
+            </p>
+            </section>
+        
+            <section class="bloco invertido">
+                <img src="/img/foto-rosto.jpg" alt="Foto de rosto">
+            <p>
+                Sou feita de lógica, de sentimento; de dados, mas também de silêncio, das palavras que nao se dizem, antes mesmo linguagem se formar.
+                Entre um raciocínio e outro, busco a contemplação — o equilíbrio entre a ordem e o acaso.
+                Às vezes compilo errado, só para ver o movimento... <br>
+                é nisso que existo.
+                Furiosamente.
+            </p>
+            </section>
+        </div>
+    </div>
+
+
+<!-- Scripts -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="../home.js"></script>
+
+</body>
+</html>
